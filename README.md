@@ -13,3 +13,7 @@ This POC is contained in `Node-Poc` subdirectory. It's a simple backend implemen
 ### C#
 
 This POC is contained in `c-sharp-backend` subdirectory. It's a simple backend implementation with a Docker deployment and a postgresql database.
+
+
+### SUMUP API
+This POC contains the basic usage of transaction creations and fetching to do basic handling of data.
