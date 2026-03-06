@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 98%;
+    --foreground: 355 16% 24%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 355 16% 24%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 355 16% 24%;
+
+    --primary: 8 66% 47%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 182 29% 38%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 181 10% 92%;
+    --muted-foreground: 355 10% 40%;
+
+    --accent: 30 100% 67%;
+    --accent-foreground: 355 16% 24%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 181 15% 85%;
+    --input: 181 15% 85%;
+    --ring: 181 22% 43%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 355 16% 24%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 27 97% 69%;
+    --sidebar-primary-foreground: 355 16% 24%;
+    --sidebar-accent: 355 16% 30%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 355 16% 30%;
+    --sidebar-ring: 27 97% 69%;
+
+    --font-display: 'Space Grotesk', sans-serif;
+    --font-body: 'DM Sans', sans-serif;
+
+    --gradient-warm: linear-gradient(135deg, hsl(var(--accent)), hsl(var(--primary)));
+    --gradient-teal: linear-gradient(135deg, hsl(var(--secondary)), hsl(182 34% 30%));
+    --gradient-hero: linear-gradient(160deg, hsl(0, 0%, 100%) 0%, hsl(181, 15%, 96%) 50%, hsl(181, 20%, 92%) 100%);
+    --shadow-warm: 0 10px 40px -10px hsl(var(--primary) / 0.28);
+    --shadow-card: 0 4px 20px -4px hsl(355 16% 24% / 0.1);
+    --shadow-teal: 0 10px 40px -10px hsl(var(--secondary) / 0.28);
+  }
+
+  .dark {
+    --background: 355 16% 12%;
+    --foreground: 60 100% 89%;
+    --card: 355 16% 18%;
+    --card-foreground: 60 100% 89%;
+    --popover: 355 16% 18%;
+    --popover-foreground: 60 100% 89%;
+    --primary: 27 97% 69%;
+    --primary-foreground: 355 16% 24%;
+    --secondary: 181 22% 43%;
+    --secondary-foreground: 60 100% 95%;
+    --muted: 355 16% 20%;
+    --muted-foreground: 60 30% 70%;
+    --accent: 1 48% 47%;
+    --accent-foreground: 60 100% 95%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 355 16% 25%;
+    --input: 355 16% 25%;
+    --ring: 27 97% 69%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+  }
+}
+
+@layer utilities {
+  .gradient-warm {
+    background: var(--gradient-warm);
+  }
+  .gradient-hero {
+    background: var(--gradient-hero);
+  }
+  .gradient-teal {
+    background: var(--gradient-teal);
+  }
+  .shadow-warm {
+    box-shadow: var(--shadow-warm);
+  }
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+  .shadow-teal {
+    box-shadow: var(--shadow-teal);
+  }
+}
