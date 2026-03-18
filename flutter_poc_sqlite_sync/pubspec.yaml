@@ -1,0 +1,31 @@
+name: flutter_poc_sqlite_sync
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0+1
+
+environment:
+  sdk: ^3.11.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  mocktail: ^1.0.0
+  brick_offline_first_with_rest: ^4.0.1
+  brick_offline_first: ^4.0.2
+  brick_sqlite: ^4.1.0+1
+  brick_rest: ^4.0.0+1
+  sqflite: ^2.3.0
+  http: ^1.2.2
+  connectivity_plus: ^5.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  build_runner: ^2.4.0
+  brick_build: ^4.1.0
+  brick_offline_first_with_rest_build: ^4.1.0
+
+flutter:
+  uses-material-design: true
+
